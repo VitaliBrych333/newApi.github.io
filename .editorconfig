@@ -1,0 +1,18 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.{css,scss,less,js,json,ts,sass,php,html,hbs,mustache,phtml,html.twig}]
+
+[*.md]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = false
+
+[package.json]
+indent_style = space
+indent_size = 2

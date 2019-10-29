@@ -1,1 +1,1 @@
-# newApi.github.io
+# last-news

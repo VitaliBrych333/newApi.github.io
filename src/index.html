@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://apis.google.com/js/api.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header>
+        <h1>App news of the world</h1>
+      </header>
+      <section>
+        <p>Please, choose language</p>
+        <form>
+          <input type="radio" name="language" value="ru">Russian<br>
+          <input type="radio" name="language" value="en">English<br>
+        </form>
+        <div>
+          <select onfocus="this.size=5;" onblur="this.size=1;" onchange="this.size=1; this.blur();" id="sources" disabled>
+            <option>Choose source</option>
+          </select>
+        </div>
+        <button id="search" disabled>Find news</button>
+        <div id="button" class="buttons"></div>
+      </section>
+      <section class="articles"></section>
+    </div>
+    <footer>
+      <p>Vitali Brych for EPAM FrontCamp 2019</p>
+    </footer>
+  </div>
+</body>
+</html>
+
+
