@@ -26,9 +26,12 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.jsx?$/,
                 loader: 'babel-loader',
-                exclude: '/node_modules/'
+                exclude: /node_modules/,
+                query: {
+					presets: ['@babel/env', '@babel/react']
+                }
             },
             {
                 test: /\.css$/,
